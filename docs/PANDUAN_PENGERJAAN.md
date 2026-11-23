@@ -37,7 +37,7 @@ Aturan main:
 - [ ] Step 2 — Project Supabase + tabel + RLS + seed
 - [x] Step 3 — Konstanta & komponen dasar
 - [x] Step 4 — Beranda
-- [ ] Step 5 — Katalog
+- [x] Step 5 — Katalog
 - [ ] Step 6 — Detail produk
 - [ ] Step 7 — Kunjungi + tombol chat
 - [ ] Step 8 — Realtime status

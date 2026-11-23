@@ -24,7 +24,7 @@ export default function Header() {
       <Link href="/" className="flex items-center gap-[10px]">
         {/* eslint-disable-next-line @next/next/no-img-element -- SVG lokal, next/image menolak SVG */}
         <img src="/assets/logomark.svg" alt="" width={30} height={30} className="h-[30px] w-[30px]" />
-        <span className="text-[14px] font-extrabold tracking-[1px] text-black">
+        <span className="text-[16px] font-extrabold tracking-[1px] text-black">
           BATIK OKRA SURABAYA
         </span>
       </Link>
@@ -34,7 +34,7 @@ export default function Header() {
           <Link
             key={item.label}
             href={item.href}
-            className={`text-[12px] tracking-[2px] ${
+            className={`text-[14px] tracking-[2px] ${
               isActive(item.href, pathname) ? "font-bold text-black" : "font-medium text-[#333]"
             }`}
           >
@@ -45,7 +45,7 @@ export default function Header() {
 
       <Link
         href="/kunjungi"
-        className="rounded-[2px] bg-black px-6 py-[10px] text-[11px] font-semibold tracking-[2px] text-white"
+        className="rounded-[2px] bg-black px-6 py-[10px] text-[13px] font-semibold tracking-[2px] text-white"
       >
         HUBUNGI
       </Link>
