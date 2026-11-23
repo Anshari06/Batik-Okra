@@ -296,7 +296,7 @@ export default function Beranda() {
               </a>
             </div>
           </div>
-          <div className="h-full w-[500px] flex-1 overflow-hidden rounded-[3px] bg-[#e0e0e0]">
+          <div className="h-full shrink-0 self-stretch overflow-hidden rounded-[3px] bg-[#e0e0e0] md:w-[600px]">
             <img src={MAPS_IMG} alt="Peta lokasi Kampung Batik Okra Surabaya" className="h-full w-full object-cover" />
           </div>
         </div>
