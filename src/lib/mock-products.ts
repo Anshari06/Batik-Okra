@@ -2,6 +2,7 @@ import type { Product } from "./types";
 
 // TODO Step 5+: ganti query Supabase. 20 produk ini disalin dari frame Katalog
 // Figma supaya filter, sort, dan Load More bisa diuji sebelum Step 2 selesai.
+// Deskripsi BTK-0001/0002 dikutip dari frame detail Figma; sisanya placeholder.
 export const MOCK_PRODUCTS: Product[] = [
   {
     kode: "BTK-0001",
@@ -9,6 +10,9 @@ export const MOCK_PRODUCTS: Product[] = [
     kategori: "parang",
     warna: ["biru", "hitam"],
     asal: "Surabaya",
+    pola: "Geometris",
+    deskripsi:
+      "Motif Parang Okra terinspirasi dari bentuk daun okra yang khas, dikombinasikan dengan pola parang klasik Jawa. Warna dominan cokelat keemasan dengan aksen krem dan hitam. Garis-garis diagonal yang mengalir menciptakan kesan elegan dan dinamis.",
     harga: 250000,
     status: "TERSEDIA",
     image_url: "/assets/7294f764bcb45b67237c2ef1fe337545.jpg",
@@ -19,6 +23,9 @@ export const MOCK_PRODUCTS: Product[] = [
     kategori: "kawung",
     warna: ["coklat", "kuning"],
     asal: "Yogyakarta",
+    pola: "Geometris",
+    deskripsi:
+      "Motif Kawung Coklat menampilkan pola kawung klasik dengan nuansa cokelat tanah yang hangat. Empat lingkaran simetris membentuk pola berulang yang elegan, terinspirasi dari buah kolang-kaling.",
     harga: 280000,
     status: "TERJUAL",
     image_url: "/assets/fc5018e319501ad44a67ce2fd04a5dde.jpg",
@@ -29,6 +36,9 @@ export const MOCK_PRODUCTS: Product[] = [
     kategori: "mega-mendung",
     warna: ["coklat", "merah"],
     asal: "Cirebon",
+    pola: "Organik",
+    deskripsi:
+      "Motif Mega Mendung merupakan batik tulis khas Cirebon dengan warna dominan coklat dan merah. Setiap helai dibuat satu per satu dengan canting, sehingga tidak ada motif yang persis sama.",
     harga: 320000,
     status: "TERSEDIA",
     image_url: "/assets/3e63b45c6e052ea919102e30bc69922c.jpg",
@@ -39,6 +49,9 @@ export const MOCK_PRODUCTS: Product[] = [
     kategori: "truntum",
     warna: ["hijau"],
     asal: "Solo",
+    pola: "Organik",
+    deskripsi:
+      "Motif Truntum merupakan batik tulis khas Solo dengan warna dominan hijau. Setiap helai dibuat satu per satu dengan canting, sehingga tidak ada motif yang persis sama.",
     harga: 275000,
     status: "TERSEDIA",
     image_url: "/assets/495cf0eaaeb26366a9f9fd35d1e80064.jpg",
@@ -49,6 +62,9 @@ export const MOCK_PRODUCTS: Product[] = [
     kategori: "kawung",
     warna: ["merah", "hitam"],
     asal: "Yogyakarta",
+    pola: "Geometris",
+    deskripsi:
+      "Motif Kawung Merah merupakan batik tulis khas Yogyakarta dengan warna dominan merah dan hitam. Setiap helai dibuat satu per satu dengan canting, sehingga tidak ada motif yang persis sama.",
     harga: 290000,
     status: "TERSEDIA",
     image_url: "/assets/2b91405ad62da2641636ef117e36c804.jpg",
@@ -59,6 +75,9 @@ export const MOCK_PRODUCTS: Product[] = [
     kategori: "truntum",
     warna: ["abu", "coklat"],
     asal: "Solo",
+    pola: "Organik",
+    deskripsi:
+      "Motif Truntum Kotak merupakan batik tulis khas Solo dengan warna dominan abu dan coklat. Setiap helai dibuat satu per satu dengan canting, sehingga tidak ada motif yang persis sama.",
     harga: 260000,
     status: "TERJUAL",
     image_url: "/assets/4496ea6d71a991675ac79de1811198a5.jpg",
@@ -69,6 +88,9 @@ export const MOCK_PRODUCTS: Product[] = [
     kategori: "parang",
     warna: ["merah", "hitam"],
     asal: "Surabaya",
+    pola: "Geometris",
+    deskripsi:
+      "Motif Parang Okra Merah merupakan batik tulis khas Surabaya dengan warna dominan merah dan hitam. Setiap helai dibuat satu per satu dengan canting, sehingga tidak ada motif yang persis sama.",
     harga: 300000,
     status: "TERSEDIA",
     image_url: "/assets/25b0f6862c206772d5bc7db2ea26044a.jpg",
@@ -79,6 +101,9 @@ export const MOCK_PRODUCTS: Product[] = [
     kategori: "kawung",
     warna: ["hijau", "kuning"],
     asal: "Pekalongan",
+    pola: "Geometris",
+    deskripsi:
+      "Motif Alas Ijo merupakan batik tulis khas Pekalongan dengan warna dominan hijau dan kuning. Setiap helai dibuat satu per satu dengan canting, sehingga tidak ada motif yang persis sama.",
     harga: 310000,
     status: "TERSEDIA",
     image_url: "/assets/c8b99042441ca12b4ab75e13dd973473.jpg",
@@ -89,6 +114,9 @@ export const MOCK_PRODUCTS: Product[] = [
     kategori: "kawung",
     warna: ["merah", "abu"],
     asal: "Surabaya",
+    pola: "Geometris",
+    deskripsi:
+      "Motif Belah Ketupat merupakan batik tulis khas Surabaya dengan warna dominan merah dan abu. Setiap helai dibuat satu per satu dengan canting, sehingga tidak ada motif yang persis sama.",
     harga: 285000,
     status: "TERSEDIA",
     image_url: "/assets/5e898b28b9c1556a692a0cbae908d6ca.jpg",
@@ -99,6 +127,9 @@ export const MOCK_PRODUCTS: Product[] = [
     kategori: "parang",
     warna: ["kuning", "coklat"],
     asal: "Pekalongan",
+    pola: "Geometris",
+    deskripsi:
+      "Motif Jajar Genjang merupakan batik tulis khas Pekalongan dengan warna dominan kuning dan coklat. Setiap helai dibuat satu per satu dengan canting, sehingga tidak ada motif yang persis sama.",
     harga: 250000,
     status: "TERSEDIA",
     image_url: "/assets/e8ea76aef7654c2375ce059e7d098e53.jpg",
@@ -109,6 +140,9 @@ export const MOCK_PRODUCTS: Product[] = [
     kategori: "mega-mendung",
     warna: ["hitam", "abu"],
     asal: "Solo",
+    pola: "Organik",
+    deskripsi:
+      "Motif Pattern Batik merupakan batik tulis khas Solo dengan warna dominan hitam dan abu. Setiap helai dibuat satu per satu dengan canting, sehingga tidak ada motif yang persis sama.",
     harga: 270000,
     status: "TERSEDIA",
     image_url: "/assets/8eff4bacd78d6e139241f3dc0b8b81cc.jpg",
@@ -119,6 +153,9 @@ export const MOCK_PRODUCTS: Product[] = [
     kategori: "mega-mendung",
     warna: ["hijau", "merah", "kuning"],
     asal: "Cirebon",
+    pola: "Organik",
+    deskripsi:
+      "Motif Kontemporer merupakan batik tulis khas Cirebon dengan warna dominan hijau dan merah dan kuning. Setiap helai dibuat satu per satu dengan canting, sehingga tidak ada motif yang persis sama.",
     harga: 295000,
     status: "TERSEDIA",
     image_url: "/assets/d6c898ee0d45bdae961ac47a57aff43a.jpg",
@@ -129,6 +166,9 @@ export const MOCK_PRODUCTS: Product[] = [
     kategori: "parang",
     warna: ["coklat", "kuning"],
     asal: "Surabaya",
+    pola: "Geometris",
+    deskripsi:
+      "Motif Sekar Kedaton merupakan batik tulis khas Surabaya dengan warna dominan coklat dan kuning. Setiap helai dibuat satu per satu dengan canting, sehingga tidak ada motif yang persis sama.",
     harga: 340000,
     status: "TERSEDIA",
     image_url: "/assets/26315143c4b71582f9d4e5043e8c2cfa.jpg",
@@ -139,6 +179,9 @@ export const MOCK_PRODUCTS: Product[] = [
     kategori: "mega-mendung",
     warna: ["biru", "hitam"],
     asal: "Pekalongan",
+    pola: "Organik",
+    deskripsi:
+      "Motif Mega Mendung Biru merupakan batik tulis khas Pekalongan dengan warna dominan biru dan hitam. Setiap helai dibuat satu per satu dengan canting, sehingga tidak ada motif yang persis sama.",
     harga: 325000,
     status: "TERJUAL",
     image_url: "/assets/26ee8fb305779d835219f84c64bb88a1.jpg",
@@ -149,6 +192,9 @@ export const MOCK_PRODUCTS: Product[] = [
     kategori: "truntum",
     warna: ["merah", "kuning"],
     asal: "Solo",
+    pola: "Organik",
+    deskripsi:
+      "Motif Truntum Kembang merupakan batik tulis khas Solo dengan warna dominan merah dan kuning. Setiap helai dibuat satu per satu dengan canting, sehingga tidak ada motif yang persis sama.",
     harga: 265000,
     status: "TERSEDIA",
     image_url: "/assets/2fdf149a3c0975e8ec0e5b11b4fae611.jpg",
@@ -159,6 +205,9 @@ export const MOCK_PRODUCTS: Product[] = [
     kategori: "kawung",
     warna: ["coklat", "abu"],
     asal: "Yogyakarta",
+    pola: "Geometris",
+    deskripsi:
+      "Motif Kawung Sari merupakan batik tulis khas Yogyakarta dengan warna dominan coklat dan abu. Setiap helai dibuat satu per satu dengan canting, sehingga tidak ada motif yang persis sama.",
     harga: 295000,
     status: "TERSEDIA",
     image_url: "/assets/49a624a05fbc82c035f46969e3d6731b.jpg",
@@ -169,6 +218,9 @@ export const MOCK_PRODUCTS: Product[] = [
     kategori: "parang",
     warna: ["hitam", "abu"],
     asal: "Cirebon",
+    pola: "Geometris",
+    deskripsi:
+      "Motif Parang Klithik merupakan batik tulis khas Cirebon dengan warna dominan hitam dan abu. Setiap helai dibuat satu per satu dengan canting, sehingga tidak ada motif yang persis sama.",
     harga: 310000,
     status: "TERSEDIA",
     image_url: "/assets/870ef9542256e13e6f918c54c78db827.jpg",
@@ -179,6 +231,9 @@ export const MOCK_PRODUCTS: Product[] = [
     kategori: "truntum",
     warna: ["biru", "hijau"],
     asal: "Surabaya",
+    pola: "Organik",
+    deskripsi:
+      "Motif Sido Mukti merupakan batik tulis khas Surabaya dengan warna dominan biru dan hijau. Setiap helai dibuat satu per satu dengan canting, sehingga tidak ada motif yang persis sama.",
     harga: 350000,
     status: "TERSEDIA",
     image_url: "/assets/b96c860e08bd0c16423bd9d073c336d5.jpg",
@@ -189,6 +244,9 @@ export const MOCK_PRODUCTS: Product[] = [
     kategori: "mega-mendung",
     warna: ["abu", "biru"],
     asal: "Pekalongan",
+    pola: "Organik",
+    deskripsi:
+      "Motif Mega Mendung Kelabu merupakan batik tulis khas Pekalongan dengan warna dominan abu dan biru. Setiap helai dibuat satu per satu dengan canting, sehingga tidak ada motif yang persis sama.",
     harga: 285000,
     status: "TERJUAL",
     image_url: "/assets/c0272d9e8c90379268d925412e74ab13.jpg",
@@ -199,6 +257,9 @@ export const MOCK_PRODUCTS: Product[] = [
     kategori: "kawung",
     warna: ["coklat", "kuning"],
     asal: "Solo",
+    pola: "Geometris",
+    deskripsi:
+      "Motif Kawung Sogan merupakan batik tulis khas Solo dengan warna dominan coklat dan kuning. Setiap helai dibuat satu per satu dengan canting, sehingga tidak ada motif yang persis sama.",
     harga: 275000,
     status: "TERSEDIA",
     image_url: "/assets/c85f3b2f3ab52a7b30b7309d4b8d8944.jpg",
