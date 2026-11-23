@@ -43,10 +43,10 @@ export default function ProductCard({
       </Link>
 
       <div className="flex flex-col gap-[4px] py-[10px]">
-        <p className="text-[14px] font-medium text-[#333]">{product.nama}</p>
+        <p className="text-[16px] font-medium text-[#333]">{product.nama}</p>
         <div className="flex items-center justify-between">
-          <p className="text-[14px] font-bold text-black">{formatRupiah(product.harga)}</p>
-          <p className="text-[11px] text-[#8a8a8a]">{product.kode}</p>
+          <p className="text-[16px] font-bold text-black">{formatRupiah(product.harga)}</p>
+          <p className="text-[13px] text-[#8a8a8a]">{product.kode}</p>
         </div>
       </div>
 
@@ -55,7 +55,7 @@ export default function ProductCard({
           href={waLink(WHATSAPP_ADMIN, pesan)}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center gap-[6px] rounded-[2px] py-[10px] text-[10px] font-semibold tracking-[2px] text-black"
+          className="flex items-center justify-center gap-[6px] rounded-[2px] py-[10px] text-[14px] font-semibold tracking-[2px] text-black"
         >
           <MessageCircle size={14} />
           HUBUNGI VIA WHATSAPP
