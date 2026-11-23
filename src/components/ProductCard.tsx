@@ -28,7 +28,9 @@ export default function ProductCard({
         style={{ height: imageHeight }}
       >
         {product.image_url ? (
-          // eslint-disable-next-line @next/next/no-img-element -- URL Supabase belum dikonfigurasi di next.config (Step 4)
+          // shortcut: <img> karena domain Supabase Storage belum didaftarkan di next.config;
+          // ganti ke next/image + images.remotePatterns setelah Step 2.
+          // eslint-disable-next-line @next/next/no-img-element -- lihat shortcut di atas
           <img
             src={product.image_url}
             alt={product.nama}
