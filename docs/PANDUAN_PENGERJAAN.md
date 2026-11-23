@@ -38,7 +38,7 @@ Aturan main:
 - [x] Step 3 — Konstanta & komponen dasar
 - [x] Step 4 — Beranda
 - [x] Step 5 — Katalog
-- [ ] Step 6 — Detail produk
+- [x] Step 6 — Detail produk
 - [ ] Step 7 — Kunjungi + tombol chat
 - [ ] Step 8 — Realtime status
 - [ ] Step 9 — Login admin
