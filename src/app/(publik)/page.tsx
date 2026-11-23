@@ -8,7 +8,10 @@ import { WHATSAPP_ADMIN, WHATSAPP_ADMIN_DISPLAY, waLink } from "@/lib/constants"
 // Foto section Beranda diambil dari frame Figma 829:19
 const HERO_IMG = "/assets/26ee8fb305779d835219f84c64bb88a1.jpg";
 const TENTANG_IMG = "/assets/tentang.jpg";
-const MAPS_IMG = "/assets/maps.png";
+
+// Embed Google Maps dari Share → Embed a map; menggantikan gambar peta statis
+const MAPS_EMBED =
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.2855953365797!2d112.72906837463744!3d-7.254371792752237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f9a6b5d6a683%3A0xf61599fb527918fc!2sWisata%20Kampung%20Batik%20Okra%20Surabaya!5e1!3m2!1sid!2sid!4v1795456106952!5m2!1sid!2sid";
 
 const VALUES = [
   {
@@ -296,8 +299,15 @@ export default function Beranda() {
               </a>
             </div>
           </div>
-          <div className="h-full shrink-0 self-stretch overflow-hidden rounded-[3px] bg-[#e0e0e0] md:w-[600px]">
-            <img src={MAPS_IMG} alt="Peta lokasi Kampung Batik Okra Surabaya" className="h-full w-full object-cover" />
+          <div className="shrink-0 self-stretch overflow-hidden rounded-[3px] bg-[#e0e0e0] md:w-[600px]">
+            <iframe
+              src={MAPS_EMBED}
+              title="Peta lokasi Kampung Batik Okra Surabaya"
+              className="h-full min-h-[400px] w-full border-0"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+            />
           </div>
         </div>
       </section>
