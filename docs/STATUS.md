@@ -1,0 +1,50 @@
+# Status Pengerjaan — Batik Okra
+
+Terakhir diperbarui: **2026-11-23** oleh Fachriditya (frontend)
+
+Legenda: ✅ selesai · 🟡 sedang dikerjakan · ⬜ belum mulai · ⛔ terblokir
+
+## Frontend (Fachriditya)
+
+| # | Step | Status | Tanggal | Catatan |
+|---|---|---|---|---|
+| 1 | Scaffold Next.js 14 + TS + Tailwind | ✅ | 2026-11-23 | App Router, `src/`, alias `@/*` |
+| 2 | Project Supabase + tabel + RLS + seed | ⬜ | | menunggu partner |
+| 3 | Konstanta & komponen dasar | ⬜ | | |
+| 4 | Beranda | ⬜ | | |
+| 5 | Katalog + filter + empty state | ⬜ | | |
+| 6 | Detail produk (TERSEDIA/TERJUAL) | ⬜ | | |
+| 7 | Kunjungi + tombol chat | ⬜ | | |
+| 8 | Realtime status produk | ⬜ | | butuh Step 2 selesai |
+| 9 | Login admin | ⬜ | | |
+| 10 | Dashboard admin | ⬜ | | |
+| 11 | Kelola produk (toggle status + konfirmasi) | ⬜ | | |
+| 12 | Form tambah produk + AI description | ⬜ | | butuh `ai-describe` dari partner |
+| 13 | UI chatbot | ⬜ | | butuh `chatbot` dari partner |
+| 14 | Verifikasi visual & fungsional | ⬜ | | |
+| 15 | Deploy Vercel + UAT | ⬜ | | |
+
+## Backend (partner)
+
+| # | Item | Status | Tanggal | Catatan |
+|---|---|---|---|---|
+| B1 | Supabase project, tabel `products`, RLS, Realtime, Storage | ⬜ | | SQL ada di `PANDUAN_PENGERJAAN.md` Step 2 |
+| B2 | Seed data produk | ⬜ | | 10–15 produk |
+| B3 | Edge Function `ai-describe` (AI Vision) | ⬜ | | kontrak: foto → `{ deskripsi, motif, warna, pola, keyakinan }` |
+| B4 | Edge Function `chatbot` (scoped + recommender) | ⬜ | | kontrak: `{ pertanyaan }` → `{ jawaban, rekomendasi[] }` |
+| B5 | Unit test scope-check & recommender | ⬜ | | wajib per `docs/project-context.md` |
+
+## Butuh dari partner
+
+- (kosong)
+
+## Kendala / Catatan
+
+- Design Figma hanya desktop; adaptasi mobile dibuat di sisi frontend.
+- Nomor WhatsApp admin masih placeholder di `src/lib/constants.ts`.
+
+## Riwayat
+
+| Tanggal | Perubahan |
+|---|---|
+| 2026-11-23 | Scaffold project + repo terhubung GitHub; dokumen acuan dipindah ke `docs/` |
