@@ -13,7 +13,7 @@ Legenda: ✅ selesai · 🟡 sedang dikerjakan · ⬜ belum mulai · ⛔ terblok
 | 3 | Konstanta & komponen dasar | ✅ | 2026-11-23 | `constants.ts`, `supabase.ts`, `types.ts`, Header/Footer/StatusBadge/ProductCard/TanyaButton, font Inter, route group `(publik)` |
 | 4 | Beranda | ✅ | 2026-11-23 | 9 section Figma; produk dari `mock-products.ts` (TODO Step 5); gambar memakai foto asli sejak Step 5 |
 | 5 | Katalog + filter + empty state | ✅ | 2026-11-23 | Filter search/ketersediaan/kategori/warna/asal/harga + reset, sort Terbaru/Harga, Load More, 2 empty state; data masih `mock-products.ts` (20 produk) |
-| 6 | Detail produk (TERSEDIA/TERJUAL) | ⬜ | | |
+| 6 | Detail produk (TERSEDIA/TERJUAL) | ✅ | 2026-11-24 | `/produk/[kode]` statis 20 kode; badge otomatis, gambar `opacity-55` + Sold Banner saat TERJUAL, tombol WA berisi nama+kode, Motif Mirip maks 4 |
 | 7 | Kunjungi + tombol chat | ⬜ | | |
 | 8 | Realtime status produk | ⬜ | | butuh Step 2 selesai |
 | 9 | Login admin | ⬜ | | |
@@ -47,6 +47,7 @@ Legenda: ✅ selesai · 🟡 sedang dikerjakan · ⬜ belum mulai · ⛔ terblok
 
 | Tanggal | Perubahan |
 |---|---|
+| 2026-11-24 | Step 6: halaman `/produk/[kode]` (detail TERSEDIA & TERJUAL, produk mirip) + deskripsi/pola di `mock-products.ts` |
 | 2026-11-23 | Step 5: halaman `/katalog` (filter, sort, Load More, empty search & empty filter) + `mock-products.ts` jadi 20 produk berfoto asli; Beranda mengambil 4 motif terbaru |
 | 2026-11-23 | Step 4: Beranda (9 section) memakai `mock-products.ts` — ProductCard & badge TERJUAL terbukti jalan |
 | 2026-11-23 | Step 3: konstanta status/WA + client Supabase + 5 komponen dasar (Header, Footer, StatusBadge, ProductCard, TanyaButton) + font Inter + route group `(publik)` |
