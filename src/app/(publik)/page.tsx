@@ -230,7 +230,7 @@ export default function Beranda() {
           </Link>
         </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {MOCK_PRODUCTS.map((produk) => (
+          {MOCK_PRODUCTS.slice(0, 4).map((produk) => (
             <ProductCard key={produk.kode} product={produk} imageHeight={320} />
           ))}
         </div>
