@@ -11,7 +11,7 @@ Legenda: ✅ selesai · 🟡 sedang dikerjakan · ⬜ belum mulai · ⛔ terblok
 | 1 | Scaffold Next.js 14 + TS + Tailwind | ✅ | 2026-11-23 | App Router, `src/`, alias `@/*` |
 | 2 | Project Supabase + tabel + RLS + seed | ⬜ | | menunggu partner |
 | 3 | Konstanta & komponen dasar | ✅ | 2026-11-23 | `constants.ts`, `supabase.ts`, `types.ts`, Header/Footer/StatusBadge/ProductCard/TanyaButton, font Inter, route group `(publik)` |
-| 4 | Beranda | ⬜ | | |
+| 4 | Beranda | ✅ | 2026-11-23 | 9 section Figma; produk dari `mock-products.ts` (TODO Step 5); semua gambar masih logomark |
 | 5 | Katalog + filter + empty state | ⬜ | | |
 | 6 | Detail produk (TERSEDIA/TERJUAL) | ⬜ | | |
 | 7 | Kunjungi + tombol chat | ⬜ | | |
@@ -47,5 +47,6 @@ Legenda: ✅ selesai · 🟡 sedang dikerjakan · ⬜ belum mulai · ⛔ terblok
 
 | Tanggal | Perubahan |
 |---|---|
+| 2026-11-23 | Step 4: Beranda (9 section) memakai `mock-products.ts` — ProductCard & badge TERJUAL terbukti jalan |
 | 2026-11-23 | Step 3: konstanta status/WA + client Supabase + 5 komponen dasar (Header, Footer, StatusBadge, ProductCard, TanyaButton) + font Inter + route group `(publik)` |
 | 2026-11-23 | Scaffold project + repo terhubung GitHub; dokumen acuan dipindah ke `docs/` |
