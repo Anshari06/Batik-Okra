@@ -1,13 +1,14 @@
-/* eslint-disable @next/next/no-img-element -- semua gambar masih placeholder, lihat TODO di bawah */
+/* eslint-disable @next/next/no-img-element -- aset lokal; next/image belum dipakai sampai Step 2 */
 import Link from "next/link";
 import { Star, PackageCheck, MessageCircle } from "lucide-react";
 import ProductCard from "@/components/ProductCard";
 import { MOCK_PRODUCTS } from "@/lib/mock-products";
 import { WHATSAPP_ADMIN, WHATSAPP_ADMIN_DISPLAY, waLink } from "@/lib/constants";
 
-// TODO: ganti dengan foto asli (menunggu file dari pemilik proyek).
-// Sementara semua slot gambar memakai logomark supaya layout bisa dicek.
-const IMG = "/assets/logomark.svg";
+// Foto section Beranda diambil dari frame Figma 829:19
+const HERO_IMG = "/assets/26ee8fb305779d835219f84c64bb88a1.jpg";
+const TENTANG_IMG = "/assets/tentang.jpg";
+const MAPS_IMG = "/assets/maps.png";
 
 const VALUES = [
   {
@@ -32,28 +33,41 @@ const PROSES = [
     no: "01",
     judul: "Desain Motif",
     teks: "Motif digambar di atas kain putih menggunakan pensil, mengikuti pola yang telah dirancang.",
+    img: "/assets/proses-1.jpg",
   },
   {
     no: "02",
     judul: "Mencanting",
     teks: "Lilin panas diaplikasikan menggunakan canting tembaga untuk membentuk garis-garis motif.",
+    img: "/assets/proses-2.jpg",
   },
   {
     no: "03",
     judul: "Pewarnaan",
     teks: "Kain dicelup ke dalam pewarna alami atau sintetis untuk memberi warna pada motif.",
+    img: "/assets/proses-3.jpg",
   },
   {
     no: "04",
     judul: "Finishing",
     teks: "Lilin dihilangkan, kain dicuci dan dikeringkan. Batik siap menjadi karya eksklusif.",
+    img: "/assets/proses-4.jpg",
   },
 ];
 
 const KATEGORI = ["SEMUA MOTIF", "PARANG", "KAWUNG", "MEGA MENDUNG", "TRUNTUM", "SOGAN"];
 
-const TILE_ROW_1 = ["Lihat Motif", "Motif Parang", "Motif Kawung"];
-const TILE_ROW_2 = ["Batik Kontemporer", "Mega Mendung", "Truntum"];
+// Label + foto tile grid (urutan mengikuti frame Figma 829:19)
+const TILE_ROW_1 = [
+  { label: "Lihat Motif", img: "/assets/25b0f6862c206772d5bc7db2ea26044a.jpg" },
+  { label: "Motif Parang", img: "/assets/7294f764bcb45b67237c2ef1fe337545.jpg" },
+  { label: "Motif Kawung", img: "/assets/fc5018e319501ad44a67ce2fd04a5dde.jpg" },
+];
+const TILE_ROW_2 = [
+  { label: "Batik Kontemporer", img: "/assets/d6c898ee0d45bdae961ac47a57aff43a.jpg" },
+  { label: "Mega Mendung", img: "/assets/3e63b45c6e052ea919102e30bc69922c.jpg" },
+  { label: "Truntum", img: "/assets/495cf0eaaeb26366a9f9fd35d1e80064.jpg" },
+];
 
 export default function Beranda() {
   return (
@@ -97,7 +111,7 @@ export default function Beranda() {
           </div>
         </div>
         <div className="bg-[#d9d9de] md:flex-1">
-          <img src={IMG} alt="" className="h-[300px] w-full object-cover md:h-full" />
+          <img src={HERO_IMG} alt="Kain batik tulis Batik Okra" className="h-[300px] w-full object-cover md:h-full" />
         </div>
       </section>
 
@@ -107,7 +121,7 @@ export default function Beranda() {
         className="flex flex-col gap-10 px-6 py-12 md:flex-row md:items-center md:gap-[60px] md:px-[60px] md:py-[80px]"
       >
         <div className="h-[400px] w-full overflow-hidden rounded-[3px] bg-[#d9d9de] md:w-[580px] md:shrink-0">
-          <img src={IMG} alt="" className="h-full w-full object-cover" />
+          <img src={TENTANG_IMG} alt="Pengrajin batik Okra Surabaya" className="h-full w-full object-cover" />
         </div>
         <div className="flex flex-1 flex-col gap-4">
           <p className="text-[16px] font-semibold tracking-[1px] text-[#8a8a8a]">
@@ -157,10 +171,10 @@ export default function Beranda() {
           Dari Kain Polos Menjadi Karya Seni
         </h2>
         <div className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {PROSES.map(({ no, judul, teks }) => (
+          {PROSES.map(({ no, judul, teks, img }) => (
             <div key={no} className="flex flex-col gap-3">
               <div className="h-[220px] w-full overflow-hidden rounded-[3px] bg-[#d9d9de]">
-                <img src={IMG} alt="" className="h-full w-full object-cover" />
+                <img src={img} alt={judul} className="h-full w-full object-cover" />
               </div>
               <div className="flex items-center gap-2 font-bold">
                 <span className="text-[28px] text-[#e0e0e0]">{no}</span>
@@ -200,13 +214,13 @@ export default function Beranda() {
             key={r}
             className={`flex flex-col gap-5 md:flex-row ${r === 0 ? "md:h-[400px]" : "md:h-[340px]"}`}
           >
-            {row.map((label) => (
+            {row.map(({ label, img }) => (
               <Link
                 key={label}
                 href="/katalog"
                 className="relative h-[240px] flex-1 overflow-hidden rounded-[3px] bg-[#d9d9de] md:h-full"
               >
-                <img src={IMG} alt="" className="h-full w-full object-cover" />
+                <img src={img} alt={label} className="h-full w-full object-cover" />
                 <span className="absolute bottom-5 left-5 rounded-[2px] bg-white px-4 py-2 text-[13px] font-semibold tracking-[2px] text-black">
                   {label}
                 </span>
@@ -282,8 +296,8 @@ export default function Beranda() {
               </a>
             </div>
           </div>
-          <div className="h-[360px] w-full flex-1 overflow-hidden rounded-[3px] bg-[#e0e0e0]">
-            <img src={IMG} alt="Peta lokasi" className="h-full w-full object-cover" />
+          <div className="h-full w-[500px] flex-1 overflow-hidden rounded-[3px] bg-[#e0e0e0]">
+            <img src={MAPS_IMG} alt="Peta lokasi Kampung Batik Okra Surabaya" className="h-full w-full object-cover" />
           </div>
         </div>
       </section>
