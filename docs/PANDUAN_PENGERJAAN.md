@@ -35,7 +35,7 @@ Aturan main:
 
 - [x] Step 1 — Scaffold Next.js 14 + TS + Tailwind (App Router, `src/`, alias `@/*`), repo ter-push
 - [ ] Step 2 — Project Supabase + tabel + RLS + seed
-- [ ] Step 3 — Konstanta & komponen dasar
+- [x] Step 3 — Konstanta & komponen dasar
 - [ ] Step 4 — Beranda
 - [ ] Step 5 — Katalog
 - [ ] Step 6 — Detail produk

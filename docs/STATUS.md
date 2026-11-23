@@ -10,7 +10,7 @@ Legenda: ✅ selesai · 🟡 sedang dikerjakan · ⬜ belum mulai · ⛔ terblok
 |---|---|---|---|---|
 | 1 | Scaffold Next.js 14 + TS + Tailwind | ✅ | 2026-11-23 | App Router, `src/`, alias `@/*` |
 | 2 | Project Supabase + tabel + RLS + seed | ⬜ | | menunggu partner |
-| 3 | Konstanta & komponen dasar | ⬜ | | |
+| 3 | Konstanta & komponen dasar | ✅ | 2026-11-23 | `constants.ts`, `supabase.ts`, `types.ts`, Header/Footer/StatusBadge/ProductCard/TanyaButton, font Inter, route group `(publik)` |
 | 4 | Beranda | ⬜ | | |
 | 5 | Katalog + filter + empty state | ⬜ | | |
 | 6 | Detail produk (TERSEDIA/TERJUAL) | ⬜ | | |
@@ -47,4 +47,5 @@ Legenda: ✅ selesai · 🟡 sedang dikerjakan · ⬜ belum mulai · ⛔ terblok
 
 | Tanggal | Perubahan |
 |---|---|
+| 2026-11-23 | Step 3: konstanta status/WA + client Supabase + 5 komponen dasar (Header, Footer, StatusBadge, ProductCard, TanyaButton) + font Inter + route group `(publik)` |
 | 2026-11-23 | Scaffold project + repo terhubung GitHub; dokumen acuan dipindah ke `docs/` |
