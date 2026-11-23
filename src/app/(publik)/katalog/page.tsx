@@ -46,7 +46,7 @@ export default function KatalogPage() {
   return (
     <div className="mx-auto w-full max-w-[1440px]">
       <div className="flex flex-col gap-2 px-6 pt-8 md:px-[60px]">
-        <p className="text-[14px] tracking-[1px] text-[#8a8a8a]">
+        <p className="text-[12px] tracking-[1px] text-[#8a8a8a]">
           <Link href="/" className="hover:text-black">
             Beranda
           </Link>{" "}
@@ -55,7 +55,7 @@ export default function KatalogPage() {
         <h1 className="text-[28px] font-bold tracking-[4px] text-black">
           KATALOG BATIK EKSKLUSIF
         </h1>
-        <p className="text-[16px] text-[#333]">
+        <p className="text-[15px] text-[#333]">
           Setiap motif hanya satu. Cek ketersediaannya di sini.
         </p>
       </div>
@@ -66,7 +66,7 @@ export default function KatalogPage() {
         <div className="min-w-0 flex-1">
           {filtered.length > 0 ? (
             <>
-              <div className="flex flex-wrap items-center justify-between gap-2 text-[15px]">
+              <div className="flex flex-wrap items-center justify-between gap-2 text-[13px]">
                 <p className="text-[#8a8a8a]">
                   Menampilkan {visible.length} dari {filtered.length} motif
                 </p>
@@ -111,7 +111,7 @@ export default function KatalogPage() {
                   <button
                     type="button"
                     onClick={() => setShown((n) => n + PAGE_SIZE)}
-                    className="rounded-[2px] border border-[#e0e0e0] px-10 py-[14px] text-[14px] font-semibold tracking-[2px] text-black hover:border-black"
+                    className="rounded-[2px] border border-[#e0e0e0] px-10 py-[14px] text-[12px] font-semibold tracking-[2px] text-black hover:border-black"
                   >
                     MUAT LEBIH BANYAK
                   </button>
@@ -125,14 +125,14 @@ export default function KatalogPage() {
                 Motif &quot;{kataKunci}&quot; tidak ditemukan.
               </p>
               <div className="flex flex-col items-center gap-4">
-                <p className="text-[16px] text-[#8a8a8a]">Coba kata kunci lain:</p>
+                <p className="text-[14px] text-[#8a8a8a]">Coba kata kunci lain:</p>
                 <div className="flex flex-wrap justify-center gap-2">
                   {SARAN_KATA_KUNCI.map((saran) => (
                     <button
                       key={saran}
                       type="button"
                       onClick={() => patch({ search: saran })}
-                      className="rounded-[20px] border border-[#e0e0e0] px-4 py-2 text-[14px] text-[#333] hover:border-black"
+                      className="rounded-[20px] border border-[#e0e0e0] px-4 py-2 text-[12px] text-[#333] hover:border-black"
                     >
                       {saran}
                     </button>
@@ -150,7 +150,7 @@ export default function KatalogPage() {
                 <button
                   type="button"
                   onClick={reset}
-                  className="rounded-[2px] border border-[#e0e0e0] px-7 py-3 text-[14px] font-semibold tracking-[2px] text-black hover:border-black"
+                  className="rounded-[2px] border border-[#e0e0e0] px-7 py-3 text-[12px] font-semibold tracking-[2px] text-black hover:border-black"
                 >
                   RESET FILTER
                 </button>

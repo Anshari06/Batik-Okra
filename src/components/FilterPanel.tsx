@@ -23,7 +23,7 @@ function Chip({
       type="button"
       onClick={onClick}
       aria-pressed={active}
-      className={`flex-1 rounded-[2px] border px-2 py-2 text-[13px] tracking-[1px] ${
+      className={`flex-1 rounded-[2px] border px-2 py-2 text-[11px] tracking-[1px] ${
         active
           ? "border-black font-bold text-black"
           : "border-[#e0e0e0] font-medium text-[#333]"
@@ -36,7 +36,7 @@ function Chip({
 
 function SectionLabel({ children }: { children: ReactNode }) {
   return (
-    <p className="text-[13px] font-semibold tracking-[2px] text-black">{children}</p>
+    <p className="text-[11px] font-semibold tracking-[2px] text-black">{children}</p>
   );
 }
 
@@ -70,7 +70,7 @@ export default function FilterPanel({
           onChange={(e) => patch({ search: e.target.value })}
           placeholder="Cari nama motif..."
           aria-label="Cari nama motif"
-          className="w-full rounded-[3px] border border-[#e0e0e0] py-[10px] pl-9 pr-8 text-[15px] text-black placeholder:text-[#8a8a8a]"
+          className="w-full rounded-[3px] border border-[#e0e0e0] py-[10px] pl-9 pr-8 text-[13px] text-black placeholder:text-[#8a8a8a]"
         />
         {filters.search ? (
           <button
@@ -165,7 +165,7 @@ export default function FilterPanel({
               type="button"
               onClick={() => toggle("asal", asal)}
               aria-pressed={active}
-              className="flex items-center gap-2 text-left text-[15px] text-[#333]"
+              className="flex items-center gap-2 text-left text-[13px] text-[#333]"
             >
               <span
                 className={`flex size-4 shrink-0 items-center justify-center rounded-[2px] border ${
@@ -193,17 +193,17 @@ export default function FilterPanel({
             inputMode="numeric"
             placeholder="Rp 0"
             aria-label="Harga minimum"
-            className="w-full min-w-0 rounded-[2px] border border-[#e0e0e0] px-[10px] py-2 text-[14px] text-black placeholder:text-[#8a8a8a]"
+            className="w-full min-w-0 rounded-[2px] border border-[#e0e0e0] px-[10px] py-2 text-[12px] text-black placeholder:text-[#8a8a8a]"
           />
           {/* shortcut: range harga pakai dua input teks, bukan slider; upgrade ke slider saat filter Supabase server-side */}
-          <span className="text-[14px] text-[#8a8a8a]">–</span>
+          <span className="text-[12px] text-[#8a8a8a]">–</span>
           <input
             value={filters.hargaMax}
             onChange={(e) => patch({ hargaMax: e.target.value.replace(/\D/g, "") })}
             inputMode="numeric"
             placeholder="Rp 500.000"
             aria-label="Harga maksimum"
-            className="w-full min-w-0 rounded-[2px] border border-[#e0e0e0] px-[10px] py-2 text-[14px] text-black placeholder:text-[#8a8a8a]"
+            className="w-full min-w-0 rounded-[2px] border border-[#e0e0e0] px-[10px] py-2 text-[12px] text-black placeholder:text-[#8a8a8a]"
           />
         </div>
       </div>
@@ -213,7 +213,7 @@ export default function FilterPanel({
       <button
         type="button"
         onClick={onReset}
-        className="text-left text-[13px] font-semibold tracking-[1px] text-black hover:underline"
+        className="text-left text-[11px] font-semibold tracking-[1px] text-black hover:underline"
       >
         Reset Filter
       </button>
