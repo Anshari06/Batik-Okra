@@ -13,6 +13,8 @@ export const metadata: Metadata = {
 const ALAMAT =
   "Jl. Kranggan Gg. VII, RT 10 / RW 01, Kelurahan Bubutan, Kecamatan Bubutan, Kota Surabaya, Jawa Timur 60174.";
 
+// TODO: konfirmasi jam asli ke pengelola — frame Beranda (829:19) menulis Senin–Sabtu 08.00–17.00,
+// frame Kunjungi (829:845) menulis jadwal di bawah ini.
 const JAM_BUKA = [
   "Senin – Jumat: 08.00 – 16.00 WIB",
   "Sabtu: 08.00 – 14.00 WIB",

@@ -39,7 +39,7 @@ Aturan main:
 - [x] Step 4 — Beranda
 - [x] Step 5 — Katalog
 - [x] Step 6 — Detail produk
-- [ ] Step 7 — Kunjungi + tombol chat
+- [x] Step 7 - Kunjungi + tombol chat
 - [ ] Step 8 — Realtime status
 - [ ] Step 9 — Login admin
 - [ ] Step 10 — Dashboard admin
