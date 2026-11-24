@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element -- aset lokal; next/image belum dipakai sampai Step 2 */
 import type { Metadata } from "next";
 import { ChevronDown } from "lucide-react";
-import { ALAMAT, JAM_BUKA, WHATSAPP_ADMIN, WHATSAPP_ADMIN_DISPLAY, waLink } from "@/lib/constants";
+import { ALAMAT, JAM_BUKA, WHATSAPP_ADMIN, WHATSAPP_ADMIN_2_DISPLAY, WHATSAPP_ADMIN_DISPLAY, waLink } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Kunjungi — Batik Okra Surabaya",
@@ -203,6 +203,7 @@ export default function Kunjungi() {
             <img src="/assets/whatsapp.svg" alt="" className="h-7 w-7" />
             <p className="text-[18px] font-bold tracking-[1px] text-black">WhatsApp</p>
             <p className="text-[15px] text-[#8a8a8a]">{WHATSAPP_ADMIN_DISPLAY}</p>
+            <p className="text-[15px] text-[#8a8a8a]">{WHATSAPP_ADMIN_2_DISPLAY}</p>
             <p className="max-w-[360px] text-[13px] leading-[1.5] text-[#8a8a8a]">
               Respon cepat di jam kerja. Bisa untuk tanya produk atau reservasi workshop.
             </p>
