@@ -22,7 +22,7 @@ Next.js 14 (App Router) + TypeScript + Tailwind CSS + Supabase · deploy Vercel.
 
 | Area | Siapa | Folder yang boleh diubah |
 |---|---|---|
-| UI publik + admin | Fachriditya (frontend) | `src/app`, `src/components`, `src/lib` |
+| UI publik + admin | Anshari Shidqi (frontend) | `src/app`, `src/components`, `src/lib` |
 | Edge Functions AI | Backend partner | `supabase/functions/**` |
 | Skema DB & RLS | Backend partner | `supabase/migrations/**` |
 
