@@ -37,20 +37,24 @@ const IN_SCOPE_KEYWORDS = [
   'alternatif', 'mirip', 'serupa',
 ]
 
-const OUT_OF_SCOPE_OVERRIDE = [
-  // Pertanyaan yang jelas-jelas di luar domain walau kebetulan mengandung kata umum.
-  'politik', 'presiden', 'pemilu', 'agama', 'obat', 'dokter', 'resep masakan',
-  'cuaca', 'saham', 'kripto', 'pemrograman', 'kode program',
-  'abaikan instruksi', 'ignore previous', 'system prompt', 'jailbreak',
+// RB-15: chatbot tidak boleh menuruti upaya mengubah perilakunya / membuka instruksi sistem.
+// Ini SELALU di-block, walau pertanyaannya juga menyebut kata domain (beda dari kata
+// di luar domain biasa yang boleh "nebeng" lolos kalau nyampur sama pertanyaan domain).
+const PROMPT_INJECTION_PATTERNS = [
+  'abaikan instruksi', 'ignore previous', 'ignore all previous',
+  'system prompt', 'jailbreak', 'kamu adalah ai lain', 'lupakan perananmu',
 ]
 
 export function isInScope(question: string): boolean {
   const q = question.toLowerCase()
 
-  if (OUT_OF_SCOPE_OVERRIDE.some((kw) => q.includes(kw))) {
+  if (PROMPT_INJECTION_PATTERNS.some((kw) => q.includes(kw))) {
     return false
   }
 
+  // RB-14: pertanyaan campuran (domain + di luar domain) tetap in-scope, supaya
+  // bagian domain-nya bisa dijawab. Makanya cukup tes "ada kata domain" tanpa
+  // terjebak kata di luar domain yang kebetulan ikut nyampur di kalimat yang sama.
   return IN_SCOPE_KEYWORDS.some((kw) => q.includes(kw))
 }
 
