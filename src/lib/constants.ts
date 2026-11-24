@@ -12,10 +12,13 @@ export const STATUS_STYLE: Record<ProductStatus, string> = {
 };
 
 // Format untuk wa.me (hanya digit, tanpa +/spasi) — bukan env frontend
-// shortcut: nomor placeholder prototype; ganti dengan nomor asli sebelum deploy produksi.
-export const WHATSAPP_ADMIN = "6281234567890";
+export const WHATSAPP_ADMIN = "6282260793266";
 // Format tampilan di UI
-export const WHATSAPP_ADMIN_DISPLAY = "+62 812-3456-7890";
+export const WHATSAPP_ADMIN_DISPLAY = "+62 822-6079-3266";
+
+// Nomor kedua, hanya ditampilkan (tidak dipakai tombol)
+export const WHATSAPP_ADMIN_2 = "628818160672";
+export const WHATSAPP_ADMIN_2_DISPLAY = "+62 881-8160-672";
 
 // Alamat & jam buka dipakai Beranda dan /kunjungi (frame 829:845)
 export const ALAMAT =

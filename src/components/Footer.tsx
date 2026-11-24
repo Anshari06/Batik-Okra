@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { WHATSAPP_ADMIN_DISPLAY } from "@/lib/constants";
+import { ALAMAT, WHATSAPP_ADMIN_DISPLAY } from "@/lib/constants";
 
 const TAUTAN = [
   { label: "Beranda", href: "/" },
@@ -31,10 +31,7 @@ export default function Footer() {
         <p className="text-[11px] font-semibold tracking-[2px] text-black">HUBUNGI</p>
         <p className="text-[13px] text-[#8a8a8a]">WhatsApp: {WHATSAPP_ADMIN_DISPLAY}</p>
         <p className="text-[13px] text-[#8a8a8a]">Instagram: @batik_okra_surabaya</p>
-        <p className="w-[260px] max-w-full text-[13px] leading-[1.4] text-[#8a8a8a]">
-          Jl. Kranggan Gg. VII, RT 10 / RW 01, Kelurahan Bubutan, Kecamatan Bubutan, Kota
-          Surabaya, Jawa Timur 60174.
-        </p>
+        <p className="w-[260px] max-w-full text-[13px] leading-[1.4] text-[#8a8a8a]">{ALAMAT}</p>
       </div>
 
       <div className="flex flex-1 flex-col justify-end gap-[10px] text-[#8a8a8a]">

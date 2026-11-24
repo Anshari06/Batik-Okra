@@ -42,13 +42,14 @@ Legenda: ✅ selesai · 🟡 sedang dikerjakan · ⬜ belum mulai · ⛔ terblok
 
 - Design Figma hanya desktop; adaptasi mobile dibuat di sisi frontend.
 - Alamat & jam buka terpusat di `src/lib/constants.ts` (`ALAMAT`, `JAM_BUKA`): Senin–Jumat 08.00–17.00, Sabtu 08.00–14.00, Minggu tutup. Frame Beranda Figma masih menulis "Senin–Sabtu 08.00–17.00" — Figma belum diperbarui, kode mengikuti keputusan pengelola.
-- Nomor WhatsApp admin masih placeholder `6281234567890` di `src/lib/constants.ts` (ditandai `shortcut:`) — aman untuk prototype, wajib diganti sebelum deploy produksi.
+- Nomor WhatsApp admin: `+62 822-6079-3266` (dipakai semua tombol WA) dan `+62 881-8160-672` (hanya ditampilkan di `/kunjungi`). Terpusat di `src/lib/constants.ts`.
 - Jawaban FAQ 2–5 di `/kunjungi` masih teks placeholder prototype (Figma hanya mengisi FAQ 1).
 
 ## Riwayat
 
 | Tanggal | Perubahan |
 |---|---|
+| 2026-11-24 | Polish publik: nomor WA asli (+62 822-6079-3266 untuk tombol, +62 881-8160-672 tampil di `/kunjungi`), menu navigasi mobile, halaman 404 Bahasa Indonesia, metadata `/katalog` |
 | 2026-11-24 | Step 7: halaman `/kunjungi` (alamat, jam buka, tiket, tips, peta, aktivitas, kontak, FAQ) + 3 foto aktivitas dari Figma; alamat & jam buka dipindah ke `constants.ts` (Sen–Jum 08.00–17.00, Sab 08.00–14.00, Minggu tutup) |
 | 2026-11-24 | Step 6: halaman `/produk/[kode]` (detail TERSEDIA & TERJUAL, produk mirip) + deskripsi/pola di `mock-products.ts` |
 | 2026-11-23 | Step 5: halaman `/katalog` (filter, sort, Load More, empty search & empty filter) + `mock-products.ts` jadi 20 produk berfoto asli; Beranda mengambil 4 motif terbaru |
