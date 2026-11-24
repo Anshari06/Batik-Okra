@@ -1,25 +1,13 @@
 /* eslint-disable @next/next/no-img-element -- aset lokal; next/image belum dipakai sampai Step 2 */
 import type { Metadata } from "next";
 import { ChevronDown } from "lucide-react";
-import { WHATSAPP_ADMIN, WHATSAPP_ADMIN_DISPLAY, waLink } from "@/lib/constants";
+import { ALAMAT, JAM_BUKA, WHATSAPP_ADMIN, WHATSAPP_ADMIN_DISPLAY, waLink } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Kunjungi — Batik Okra Surabaya",
   description:
     "Alamat, jam buka, tiket workshop, dan peta lokasi Kampung Batik Okra Surabaya.",
 };
-
-// Frame Figma 829:845
-const ALAMAT =
-  "Jl. Kranggan Gg. VII, RT 10 / RW 01, Kelurahan Bubutan, Kecamatan Bubutan, Kota Surabaya, Jawa Timur 60174.";
-
-// TODO: konfirmasi jam asli ke pengelola — frame Beranda (829:19) menulis Senin–Sabtu 08.00–17.00,
-// frame Kunjungi (829:845) menulis jadwal di bawah ini.
-const JAM_BUKA = [
-  "Senin – Jumat: 08.00 – 16.00 WIB",
-  "Sabtu: 08.00 – 14.00 WIB",
-  "Minggu & Hari Libur: Tutup",
-];
 
 const MAPS_EMBED =
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.2855953365797!2d112.72906837463744!3d-7.254371792752237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f9a6b5d6a683%3A0xf61599fb527918fc!2sWisata%20Kampung%20Batik%20Okra%20Surabaya!5e1!3m2!1sid!2sid!4v1795456106952!5m2!1sid!2sid";
@@ -58,7 +46,7 @@ const AKTIVITAS = [
   },
 ];
 
-// Jawaban FAQ 2–5 belum ada di Figma; TODO: minta teks final ke pengelola.
+// Jawaban FAQ 2–5 masih placeholder prototype (Figma hanya mengisi FAQ 1).
 const FAQ = [
   {
     tanya: "Apakah bisa membeli langsung dari website?",

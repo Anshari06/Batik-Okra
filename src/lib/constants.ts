@@ -12,9 +12,20 @@ export const STATUS_STYLE: Record<ProductStatus, string> = {
 };
 
 // Format untuk wa.me (hanya digit, tanpa +/spasi) — bukan env frontend
+// shortcut: nomor placeholder prototype; ganti dengan nomor asli sebelum deploy produksi.
 export const WHATSAPP_ADMIN = "6281234567890";
 // Format tampilan di UI
 export const WHATSAPP_ADMIN_DISPLAY = "+62 812-3456-7890";
+
+// Alamat & jam buka dipakai Beranda dan /kunjungi (frame 829:845)
+export const ALAMAT =
+  "Jl. Kranggan Gg. VII, RT 10 / RW 01, Kelurahan Bubutan, Kecamatan Bubutan, Kota Surabaya, Jawa Timur 60174.";
+
+export const JAM_BUKA = [
+  "Senin – Jumat: 08.00 – 17.00 WIB",
+  "Sabtu: 08.00 – 14.00 WIB",
+  "Minggu: Tutup",
+];
 
 // Opsi filter katalog — label & warna dirujuk dari Figma frame 829:246
 export const KATEGORI_OPTIONS = [

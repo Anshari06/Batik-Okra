@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Star, PackageCheck, MessageCircle } from "lucide-react";
 import ProductCard from "@/components/ProductCard";
 import { MOCK_PRODUCTS } from "@/lib/mock-products";
-import { WHATSAPP_ADMIN, WHATSAPP_ADMIN_DISPLAY, waLink } from "@/lib/constants";
+import { ALAMAT, JAM_BUKA, WHATSAPP_ADMIN, WHATSAPP_ADMIN_DISPLAY, waLink } from "@/lib/constants";
 
 // Foto section Beranda diambil dari frame Figma 829:19
 const HERO_IMG = "/assets/26ee8fb305779d835219f84c64bb88a1.jpg";
@@ -260,17 +260,16 @@ export default function Beranda() {
           <div className="flex max-w-[520px] flex-1 flex-col gap-6">
             <div className="flex flex-col gap-2">
               <p className="text-[11px] font-semibold tracking-[2px] text-[#8a8a8a]">ALAMAT</p>
-              <p className="max-w-[400px] text-[15px] leading-[1.5] text-[#333]">
-                Jl. Kranggan Gg. VII, RT 10 / RW 01, Kelurahan Bubutan, Kecamatan Bubutan, Kota
-                Surabaya, Jawa Timur 60174.
-              </p>
+              <p className="max-w-[400px] text-[15px] leading-[1.5] text-[#333]">{ALAMAT}</p>
             </div>
             <div className="flex flex-col gap-2">
               <p className="text-[11px] font-semibold tracking-[2px] text-[#8a8a8a]">JAM BUKA</p>
               <p className="text-[15px] leading-[1.5] text-[#333]">
-                Senin – Sabtu: 08.00 – 17.00 WIB
-                <br />
-                Minggu: Tutup
+                {JAM_BUKA.map((baris) => (
+                  <span key={baris} className="block">
+                    {baris}
+                  </span>
+                ))}
               </p>
             </div>
             <div className="flex flex-col gap-2">
