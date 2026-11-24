@@ -28,11 +28,11 @@ Legenda: ✅ selesai · 🟡 sedang dikerjakan · ⬜ belum mulai · ⛔ terblok
 
 | # | Item | Status | Tanggal | Catatan |
 |---|---|---|---|---|
-| B1 | Supabase project, tabel `products`, RLS, Realtime, Storage | ⬜ | | SQL ada di `PANDUAN_PENGERJAAN.md` Step 2 |
-| B2 | Seed data produk | ⬜ | | 10–15 produk |
-| B3 | Edge Function `ai-describe` (AI Vision) | ⬜ | | kontrak: foto → `{ deskripsi, motif, warna, pola, keyakinan }` |
-| B4 | Edge Function `chatbot` (scoped + recommender) | ⬜ | | kontrak: `{ pertanyaan }` → `{ jawaban, rekomendasi[] }` |
-| B5 | Unit test scope-check & recommender | ⬜ | | wajib per `docs/project-context.md` |
+| B1 | Supabase project, tabel `products`, RLS, Realtime, Storage | ✅ | | SQL ada di `PANDUAN_PENGERJAAN.md` Step 2 |
+| B2 | Seed data produk | ✅ | | 10–15 produk |
+| B3 | Edge Function `ai-describe` (AI Vision) | ✅ | | kontrak: foto → `{ deskripsi, motif, warna, pola, keyakinan }` |
+| B4 | Edge Function `chatbot` (scoped + recommender) | ✅ | | kontrak: `{ pertanyaan }` → `{ jawaban, rekomendasi[] }` |
+| B5 | Unit test scope-check & recommender | ✅ | | wajib per `docs/project-context.md` |
 
 ## Butuh dari partner
 
