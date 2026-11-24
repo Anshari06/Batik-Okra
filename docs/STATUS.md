@@ -1,10 +1,10 @@
 # Status Pengerjaan — Batik Okra
 
-Terakhir diperbarui: **2026-11-23** oleh Fachriditya (frontend)
+Terakhir diperbarui: **2026-11-24** oleh Anshari Shidqi (frontend)
 
 Legenda: ✅ selesai · 🟡 sedang dikerjakan · ⬜ belum mulai · ⛔ terblokir
 
-## Frontend (Fachriditya)
+## Frontend (Anshari Shidqi)
 
 | # | Step | Status | Tanggal | Catatan |
 |---|---|---|---|---|

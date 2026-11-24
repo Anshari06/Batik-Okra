@@ -1,6 +1,6 @@
-b---
+---
 project_name: 'Website Katalog Digital Cerdas Berbasis AI — Kampung Batik Okra Surabaya'
-user_name: 'Fachriditya'
+user_name: 'Anshari Shidqi'
 date: '2026-09-23'
 sections_completed: ['technology_stack', 'domain_rules', 'language_rules', 'framework_rules', 'testing_rules', 'quality_rules', 'workflow_rules', 'anti_patterns']
 status: 'complete'

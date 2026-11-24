@@ -7,7 +7,7 @@
 | Repo | https://github.com/Anshari06/Batik-Okra |
 | Figma | https://www.figma.com/design/Bpjx1K40jcNB39p072tySl/TS-DESIGN — page **batikokra** (`829:12`), section Desktop Public |
 | Dokumen acuan | `docs/BRD_Katalog_Batik_Okra.md`, `docs/PRD_Katalog_Batik_Okra.md`, `docs/project-context.md` |
-| Peran | Frontend: Fachriditya (semua tampilan + koneksi Supabase). Backend AI: partner (Edge Functions `ai-describe`, `chatbot`) |
+| Peran | Frontend: Anshari Shidqi (semua tampilan + koneksi Supabase). Backend AI: partner (Edge Functions `ai-describe`, `chatbot`) |
 | Progress | [`STATUS.md`](STATUS.md) — update setiap step selesai |
 | Stack | Next.js 14 (App Router) + React 18 + TypeScript strict + Tailwind CSS 3 + Supabase |
 | Deploy | Vercel |
@@ -19,7 +19,7 @@
 
 | Area | PIC | File/folder |
 |---|---|---|
-| UI publik + admin | Fachriditya (frontend) | `src/app`, `src/components`, `src/lib` |
+| UI publik + admin | Anshari Shidqi (frontend) | `src/app`, `src/components`, `src/lib` |
 | Edge Functions AI (`ai-describe`, `chatbot`) | Backend partner | `supabase/functions/**` |
 | Skema DB & RLS | Backend partner | `supabase/migrations/**` |
 
