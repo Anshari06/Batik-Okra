@@ -118,8 +118,10 @@ async function callVisionProvider(file: File, signal: AbortSignal): Promise<Desc
   "keyakinan": <angka 0-1, seberapa yakin kamu pada deteksi motif ini>
 }`
 
-  const response = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`,
+const model = Deno.env.get('GEMINI_MODEL') ?? 'gemini-3.8-flash'
+
+const response = await fetch(
+  `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`,
     {
       method: 'POST',
       signal,
